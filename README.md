@@ -23,6 +23,9 @@ Basics, requested from subject:
 You can read the project subject [here](https://github.com/RIDWANE-EL-FILALI/ft_printf/blob/master/printf.pdf)
   
   
+# call it a gift
+gcc *.c -fsanitize=address
+  
 # ⛓️tester link
   you can checkout this tester [here](https://github.com/Tripouille/libftTester)
 
