@@ -38,15 +38,17 @@ int	ft_printf(const char *format, ...)
 	va_list	args;
 	int		i;
 	int		count;
+	int		n;
 
 	va_start(args, format);
 	i = 0;
 	count = 0;
-	while (format[i])
+	n = ft_strlen(format)
+	while (format[i] && i < n)
 	{
 		if (format[i] != '%')
 			ft_putchar(format[i++], &count);
-		else
+		else if (i < n)
 		{
 			i++;
 			ft_print(args, format, &count, &i);
