@@ -43,7 +43,7 @@ int	ft_printf(const char *format, ...)
 	va_start(args, format);
 	i = 0;
 	count = 0;
-	n = ft_strlen(format)
+	n = ft_strlen(format);
 	while (format[i] && i < n)
 	{
 		if (format[i] != '%')
